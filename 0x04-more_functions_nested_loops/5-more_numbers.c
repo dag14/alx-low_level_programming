@@ -1,7 +1,6 @@
 #include "main.h"
-/**
- * print_most_numbers - check the code for Holberton School students.
- * Return: Always 0.
+/*** print_most_numbers
+* Return: Always 0.
  */
 void print_most_numbers(void)
 {
@@ -17,3 +16,4 @@ c++;
 }
 _putchar('\n');
 }
+
