@@ -1,35 +1,26 @@
 #include <stdio.h>
+
 /**
- * main 
-* Return: void.
+ * main
+* Return: Always 0.
  */
 int main(void)
 {
-	int n;
+int i;
 
-	n = 1;
-	printf("%d", n);
-for (n = 1; n <= 100; n++)
-
-	for (n = 2; n <= 100; n++)
+for (i = 1; i <= 100; i++)
 {
-		if ((n % 3 == 0) && (n % 5 == 0))
-		{
-			printf(" FizzBuzz");
-		}
-		else if (n % 3 == 0)
-		{
-			printf(" Fizz");
-		}
-		else if (n % 5 == 0)
-		{
-			printf(" Buzz");
-		}
-		else
-		{
-			printf(" %d", n);
-		}
-	}
-	printf("\n");
-	return (0);
+if ((i % 5) == 0 && (i % 3) == 0)
+printf("FizzBuzz");
+else if ((i % 5) == 0)
+printf("Buzz");
+else if ((i % 3) == 0)
+printf("Fizz");
+else
+printf("%d", i);
+printf("%s", i < 100 ? " " : "");
+}
+printf("\n");
+
+return (0);
 }
